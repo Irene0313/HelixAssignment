@@ -26,4 +26,4 @@ This project is built with Gradle and Java.
 
 ### AI Assistance
 Using Chatgpt to help understand the concept of Ancestor and Paths:
-- Ask ai for get example to help better understand the logic behind it
+- Ask ai for giving some example to help me better understand the logic behind it
