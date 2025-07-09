@@ -9,7 +9,7 @@ public class TreeResolver {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
-    // Used for future 'ref' checking
+    // Used for future 'reference' checking
     private final Map<String, JsonNode> pathMap = new LinkedHashMap<>();
 
     // Constructor
@@ -33,7 +33,7 @@ public class TreeResolver {
                 arr.add(TextNode.valueOf("'" + i + "'"));
             }
 
-            // Record the canonical path to this node for future reference
+            // Record the path to this node for future reference
             this.recordPath(path, arr);
 
             return arr;
@@ -118,7 +118,7 @@ public class TreeResolver {
             return output;
         }
 
-        // // ---------- Atom  ----------
+        // ---------- Atom  ----------
         this.recordPath(path, node);
         return node;
 
